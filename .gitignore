@@ -1,3 +1,4 @@
 data/*
 *.swp
 src/config/*
+src/*.pyc
