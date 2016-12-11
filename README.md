@@ -8,4 +8,4 @@ This bot tweets @realDonaldTrump about his conflicts of interest. Hoping that th
 Implementation
 ------
 
-This bot will use [tweepy](http://docs.tweepy.org/)'s streaming to receive a pulse on @RealDonaldTrump. After doing so, it will respond with a random selection of possible or real conflicts of interest.
+This bot will use [tweepy's](http://docs.tweepy.org/) streaming to receive a pulse on @RealDonaldTrump. After doing so, it will respond with a random selection of possible or real conflicts of interest.
