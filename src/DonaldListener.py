@@ -11,4 +11,9 @@ class DonaldListener(tweepy.StreamListener):
 
     def on_error(self, status_code):
         print status_code
-        print "https://dev.twitter.com/overview/api/response-codes"
+
+        # If 420 is returned, kills stream
+        if status_code == 420:
+            return False
+        else:
+            print "https://dev.twitter.com/overview/api/response-codes"
