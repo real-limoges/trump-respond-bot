@@ -8,4 +8,7 @@ if __name__ == '__main__':
     donaldListener = DonaldListener()
 
     tweet_stream = tweepy.Stream(auth=auth, listener=donaldListener)
-    tweet_stream.filter(track=['realdonaldtrump'], async=True)
+    #Trump ID - public info
+    tweet_stream.filter(follow=['25073877'])
+    #Personal ID - public info
+#    tweet_stream.filter(follow=['741352065289486337'])
