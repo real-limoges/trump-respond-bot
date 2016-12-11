@@ -1,15 +1,6 @@
-with open('../config/access_token') as f:
-    access_token = f.read().strip()
+import tweepy
 
-with open('../config/access_secret') as f:
-    access_secret = f.read().strip()
-
-with open('../config/consumer_key') as f:
-    consumer_key = f.read().strip()
-
-with open('../config/consumer_secret') as f:
-    consumer_secret = f.read().strip()
-
+from auth_config import get_auth
 
 if __name__ == '__main__':
-    print "Hello World!"
+    auth = get_auth()
